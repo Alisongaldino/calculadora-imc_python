@@ -4,14 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
 </head>
 <body>
-    <main id="conatiner">
+    <main id="container">
         <section id="img">
             <img src="images/heath.svg" alt="">
         </section>
-        <section
+
+        <section id="calculadora">
+            <form id="form">
+                <h1 id="titulo">
+                    Calculadora - imc
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <spam>
+                            KG
+                        </spam>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="height" required>
+                        <spam>
+                            M
+                        </spam>
+                    </div>
+                </div>
+
+                <button id="calcular">
+                    calcular
+                </button>
+            </form>
+            <div id="info">
+                <div id="resultado">
+                    <div id="imc">
+                        <spam id="valor"></spam>
+                        <spam id="seu IMC"></spam>
+                    </div>
+                    <div id="descricao">
+                        <spam></spam>
+                    </div>
+                </div>
+                <div id="mais info">
+                    <a href="https://www.tuasaude.com/calculadora/imc/">
+                    mais informações sobre IMC
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
